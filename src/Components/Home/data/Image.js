@@ -41,13 +41,13 @@ export default function Fileupload() {
             Zip:"",
 
         },
-        validate: (value) => {
+        validate: () => {
             let errors = {};
             return errors
         },
         onSubmit: async (formData) => {
             try {
-                let check = await axios.post('http://localhost:8000/Form/Upload', formData);
+                let check = await axios.post('http://localhost:8000/User/Upload', formData);
                 console.log(check);
                 alert("Form Submitted")
             } catch (error) {
