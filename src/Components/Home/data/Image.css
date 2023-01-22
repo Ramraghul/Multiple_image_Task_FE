@@ -1,0 +1,17 @@
+.Click{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.form{
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Image{
+    width: 7rem;
+    border: dashed 1px;
+    border-radius: 10px;
+}
