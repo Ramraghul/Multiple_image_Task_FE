@@ -10,7 +10,7 @@ export default function Fileupload() {
     const onUpload =async(data) => {
         SetdataSources(data)
         try {
-            await axios.post('http://localhost:8000/upload',data)
+            await axios.post('https://multiple-image-task-be.vercel.app/upload',data)
             alert('Successfully Image upload')
         } catch (error) {
             console.log(error);
